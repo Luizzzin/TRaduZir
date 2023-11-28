@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'noodle';
+    src: url(imagens/big_noodle_titling.ttf);
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+  }
+  
+  /* area das letras do header */
+  #area {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    color: black;
+    align-items: center;
+  }
+  /* letras header */
+
+  /* texto da header */
+  .textin {
+    font: 400 26px 'noodle';
+    transition: 0.2s ease;
+  }
+  
+  .textin:hover {
+    color: rgb(214, 139, 0);
+  }
+  /* texto da header */
+  #logo {
+    width: 70px;
+  }
+  
+
+  /* tela com a foto de background */
+  #main {
+    background-image: url(imagens/tela.png);
+    display: flex;
+    height: 700px;
+    background-size: 100%;
+    align-items: end;
+  }
+  /* -- */
+
+  /* retangulo branco */
+  #retangulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 130px;
+    background-color: #fff;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  /* -- */
+
+  /* parte de selecionar idiomas */
+  #idiomas {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  /* -- */
+
+  /* tamanho do botao */
+  .icon {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  /* -- */
+
+  /* colocando imagens dos botoes */
+  #pt-br {
+    background-image: url(imagens/BandeiradoBrasil.jpg);
+    background-size: 100%;
+  }
+  
+  #en {
+    background-image: url(imagens/usa.png);
+    background-size: 150%;
+  }
+  
+  #es {
+    background-image: url(imagens/espanha.png);
+    background-size: 100%;
+  }
+  /* -- */
+
+  /* teste de rgb com o chatgpt */
+  
+  #jogue {
+    font: 500 42px 'noodle';
+    color: transparent;
+    cursor: pointer;
+    /* usei o chatgpt fiquei curioso o como poderia ficar */
+
+    background-size: 200% 50%; /* Aumenta o tamanho do gradiente para poder animar */
+    background-image: linear-gradient(90deg, #ff0000,rgb(255, 230, 0), #00ff00,rgb(8, 235, 216), #0000ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: moveGradient 1s linear infinite; /* Adiciona uma animação linear infinita ao gradiente */
+  }
+  
+  @keyframes moveGradient {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+  /* ---- */
+
+
+  #paragrafo1{
+    display: flex;
+    width: 98.8vw ;
+    height: 460px;
+    background-color: #c8d6eb;
+  }
+  #descricao{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 70px;
+    font: 300 22px 'noodle';
+    color: #2f374c;
+  }
+  #windowmaker{
+    width: 354px;
+    height: 420px;
+    margin-right: 200px;
+  }
+  #descrição, h1{
+    font: 300 65px 'noodle';
+    margin-bottom: 10px ;
+    color: #2f374c;
+  }
+  #imaga{
+    display: flex;
+    width: 55vw;
+    height: 100%;
+    justify-content: end;
+    align-items: end;
+  }
